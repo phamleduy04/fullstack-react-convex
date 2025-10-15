@@ -4,9 +4,18 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 import { ConvexProviderWithAuth0 } from 'convex/react-auth0';
-import App from './App.tsx';
+import { Suspense } from 'react';
+import { BrowserRouter, useRoutes } from 'react-router-dom';
+import routes from '~react-pages';
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
+
+function App() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>{useRoutes(routes)}</Suspense>
+  );
+}
+
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <Auth0Provider
@@ -17,7 +26,9 @@ createRoot(document.getElementById('root') as HTMLElement).render(
       }}
     >
       <ConvexProviderWithAuth0 client={convex}>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </ConvexProviderWithAuth0>
     </Auth0Provider>
   </StrictMode>,
