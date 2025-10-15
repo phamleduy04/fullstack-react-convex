@@ -9,6 +9,16 @@ After the initial setup (<2 minutes) you'll have a working full-stack app using:
 - [Vite](https://vitest.dev/) for optimized web hosting
 - [Tailwind](https://tailwindcss.com/) for building great looking accessible UI
 
+## Setup Auth0
+- Copy and rename `example.env.local` to `.env.local`
+- Add `VITE_AUTH0_DOMAIN` and `VITE_AUTH0_CLIENT_ID` to `.env.local` file
+- Add `AUTH0_DOMAIN` and `AUTH0_CLIENT_ID` to convex:
+    
+```
+npx convex env set AUTH0_DOMAIN <your auth0 domain>
+npx convex env set AUTH0_CLIENT_ID <your auth0 client id>
+```
+
 ## Get started
 
 If you just cloned this codebase and didn't use `npm create convex`, run:
