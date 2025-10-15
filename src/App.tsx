@@ -1,5 +1,6 @@
+import { api } from '@convex/api';
+import { Button } from '@shadcn/button';
 import { useMutation, useQuery } from 'convex/react';
-import { api } from '../convex/_generated/api';
 
 export default function App() {
   return (
@@ -38,7 +39,7 @@ function Content() {
         is persisted in the Convex cloud database!
       </p>
       <p>
-        <button
+        <Button
           type="button"
           className="bg-dark dark:bg-light text-light dark:text-dark text-sm px-4 py-2 rounded-md border-2"
           onClick={() => {
@@ -46,7 +47,7 @@ function Content() {
           }}
         >
           Add a random number
-        </button>
+        </Button>
       </p>
       <p>
         Numbers:{' '}

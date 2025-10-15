@@ -24,7 +24,9 @@
 
     /* Import paths */
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@shadcn/*": ["./src/components/ui/*"],
+      "@convex/*": ["./convex/_generated/*"]
     }
   },
   "include": ["src"]
