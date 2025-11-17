@@ -102,8 +102,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@19.2.2(@types/react@19.2.2))(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       convex:
-        specifier: ^1.27.0
-        version: 1.28.0(@auth0/auth0-react@2.7.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
+        specifier: ^1.29.2
+        version: 1.29.2(@auth0/auth0-react@2.7.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0)
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -1687,8 +1687,8 @@ packages:
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
-  convex@1.28.0:
-    resolution: {integrity: sha512-40FgeJ/LxP9TxnkDDztU/A5gcGTdq1klcTT5mM0Ak+kSlQiDktMpjNX1TfkWLxXaE3lI4qvawKH95v2RiYgFxA==}
+  convex@1.29.2:
+    resolution: {integrity: sha512-9QCj53/zFV+hHZRP8epU41a3NmOkYDdEtpvSPKjAZp6l60NMN+O3fyOX4r5Y6yzPIhsUpJvMH6xB5xwJTLz92A==}
     engines: {node: '>=18.0.0', npm: '>=7.0.0'}
     hasBin: true
     peerDependencies:
@@ -4170,7 +4170,7 @@ snapshots:
 
   convert-source-map@2.0.0: {}
 
-  convex@1.28.0(@auth0/auth0-react@2.7.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0):
+  convex@1.29.2(@auth0/auth0-react@2.7.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react@19.2.0):
     dependencies:
       esbuild: 0.25.4
       prettier: 3.6.2

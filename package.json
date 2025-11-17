@@ -9,7 +9,7 @@
     "dev:backend": "convex dev",
     "predev": "convex dev --until-success",
     "build": "tsc -b && vite build",
-    "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "tsc --noEmit && biome check",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -44,7 +44,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
-    "convex": "^1.27.0",
+    "convex": "^1.29.2",
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.6.0",
     "input-otp": "^1.4.2",
